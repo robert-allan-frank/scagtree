@@ -1,0 +1,8 @@
+{{#each meows as |meow|}}
+  {{meow-detail meow=meow}}
+{{else}}
+  <div class="no-meows">
+    <div class="icon"></div>
+    <p>There are no meows to display.</p>
+  </div>
+{{/each}}

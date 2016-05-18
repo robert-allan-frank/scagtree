@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12002) - http://www.bohemiancoding.com/sketch -->
+    <title>clock-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Profile" sketch:type="MSArtboardGroup" transform="translate(-66.000000, -466.000000)" fill="#B2B2B2">
+            <g id="about-container" sketch:type="MSLayerGroup" transform="translate(66.000000, 358.000000)">
+                <g id="joined" transform="translate(0.000000, 108.000000)" sketch:type="MSShapeGroup">
+                    <path d="M10,0 C4.47764706,0 0,4.47764706 0,10 C0,15.5223529 4.47764706,20 10,20 C15.5223529,20 20,15.5223529 20,10 C20,4.47764706 15.5223529,0 10,0 Z M10,18.8235294 C5.12705882,18.8235294 1.17647059,14.8741176 1.17647059,10 C1.17647059,5.12705882 5.12705882,1.17647059 10,1.17647059 C14.8741176,1.17647059 18.8235294,5.12705882 18.8235294,10 C18.8235294,14.8741176 14.8741176,18.8235294 10,18.8235294 Z M10.5882353,3.52941176 L9.41176471,3.52941176 L9.41176471,9.43176471 L9.41176471,11.8294118 L13.3,15.0917647 L14.0552941,14.1905882 L10.5882353,11.2811765 L10.5882353,3.52941176 Z" id="clock-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

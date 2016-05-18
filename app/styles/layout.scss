@@ -1,0 +1,35 @@
+// -$header-height: 50px;
+$bg-color: #f1f4f2;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.page-container {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+main {
+  width: 590px;
+  margin: 80px auto;
+  padding-bottom: 20px;
+}
+
+aside {
+  width: 288px;
+  position: fixed;
+  top: 80px;
+
+  &.right {
+    right: 0;
+  }
+}

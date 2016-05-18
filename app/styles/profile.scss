@@ -1,0 +1,141 @@
+.profile-cover {
+  height: 556px;
+  background-color: gray;
+}
+
+.stats-container {
+  $stats-height: 63px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #DDDDDD;
+  height: $stats-height;
+
+  .avatar {
+    border: 5px solid white;
+    position: absolute;
+    bottom: -80px;
+    left: 47px;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+  }
+
+  .follow-container {
+    button {
+      float: right;
+      margin-right: 20px;
+      margin-top: 2px;
+    }
+  }
+
+  ul.profile-stats {
+    text-align: left;
+    margin: 0;
+    margin-left: 291px;
+    padding-top: 12px;
+
+    li {
+      overflow: hidden;
+      position: relative;
+      height: $stats-height - 12px;
+      padding: 0 20px;
+      margin: 0;
+      cursor: pointer;
+      float: left;
+
+      &::after {
+        content: '';
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        background-color: $link-color;
+        transition: bottom 0.2s;
+      }
+      &:hover::after, &.active::after {
+        bottom: 0;
+      }
+
+      h4 {
+        font-size: 12px;
+        color: #B5B5B5;
+        line-height: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.page-container.user-page {
+  main {
+    margin: 40px auto;
+  }
+
+  main.expanded {
+    margin-left: 300px;
+    width: auto;
+  }
+
+  .profile-glance {
+    width: calc(45%);
+    width: -webkit-calc(50% - 13px);
+    width: calc(50% - 13px);
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 5px;
+  }
+
+  .about-description {
+    margin: 10px 0 20px 0;
+
+    button.small {
+      padding: 4px 10px;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+  }
+
+  aside {
+    width: 200px;
+    margin-left: 30px;
+    position: absolute;
+    top: 0;
+
+    h1 {
+      font-size: 26px;
+      color: #515151;
+      line-height: 36px;
+      font-weight: 500;
+    }
+
+    p.description {
+      font-size: 15px;
+      color: rgba(0,0,0,0.59);
+      line-height: 22px;
+      font-weight: 400;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 15px;
+      color: #8B8B8B;
+      font-weight: 300;
+    }
+
+    p.joined::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("/images/clock-icon.png");
+      display: inline-block;
+      position: relative;
+      margin-bottom: -5px;
+      margin-right: 7px;
+    }
+  }
+}

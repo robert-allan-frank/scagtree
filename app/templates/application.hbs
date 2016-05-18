@@ -1,3 +1,21 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+  <div class="page-container">
 
-{{outlet}}
+    <div class="logo">Scagtree</div>
+
+    {{#if isAuthenticated}}
+      <nav>
+        {{#link-to "home"}}Home{{/link-to}}
+
+        {{#link-to "profile" authenticatedUserid}}
+          @{{authenticatedUsername}}
+        {{/link-to}}
+
+        <button class="meow">Meow</button>
+      </nav>
+    {{/if}}
+
+  </div>
+</header>
+
+{{liquid-outlet}}

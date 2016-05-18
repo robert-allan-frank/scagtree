@@ -1,0 +1,71 @@
+.cat-detail {
+  padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  img.picture {
+    width: 51px;
+    height: 51px;
+    vertical-align: top;
+    margin-right: 7px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .info {
+    display: inline-block;
+    max-width: 500px;
+
+    span span:nth-child(1) {
+      font-size: 15px;
+      color: #737373;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    span span:nth-child(2) {
+      font-size: 13px;
+      color: #B9B9B9;
+      line-height: 18px;
+    }
+
+    span span:nth-child(3) {
+      display: block;
+      font-size: 16px;
+      color: #6B6B6B;
+      max-width: 499px;
+      opacity: inherit;
+    }
+  }
+
+  .dead {
+    opacity: 0.33;
+  }
+
+  button.trash {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  button.revive {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+}

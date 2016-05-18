@@ -1,0 +1,19 @@
+<div class="cover-photo" style={{coverStyle}}></div>
+<img class="avatar" src={{avatarUrl}} data-profile-image="me"/>
+{{#link-to "profile" user.id}}
+  {{user.username}}
+{{/link-to}}
+<ul class="profile-stats">
+  <li>
+    <h4>Meows</h4>
+    <p>{{user.meows.length}}</p>
+  </li>
+  <li>
+    <h4>Following</h4>
+    <p>{{user.following.length}}</p>
+  </li>
+  <li>
+    <h4>Followers</h4>
+    <p>{{user.followers.length}}</p>
+  </li>
+</ul>

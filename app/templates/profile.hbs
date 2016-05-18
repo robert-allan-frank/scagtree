@@ -1,0 +1,52 @@
+<div class="profile-cover cover-photo" style={{coverStyle}}></div>
+
+<div class="stats-container">
+  <div class="page-container">
+    <img class="avatar" src={{avatarUrl}} data-profile-image="me"/>
+
+    <ul class="profile-stats">
+      {{#link-to "profile.index" tagName="li" id="link-meows"}}
+        <h4>Meows</h4>
+        <p>{{model.user.meows.length}}</p>
+      {{/link-to}}
+
+      {{#link-to "profile.cats" tagName="li" id="link-cats"}}
+        <h4>Cats</h4>
+        <p>{{model.user.cats.length}}</p>
+      {{/link-to}}
+
+      <li>
+        <h4>Following</h4>
+        <p>{{model.user.following.length}}</p>
+      </li>
+
+      <li>
+        <h4>Followers</h4>
+        <p>{{model.user.followers.length}}</p>
+      </li>
+
+      <div class="follow-container">
+        {{#if isFollowing}}
+          <button {{action 'unfollow'}} class="red">Unfollow</button>
+        {{else}}
+          <button {{action 'follow'}}>Follow</button>
+        {{/if}}
+      </div>
+
+    </ul>
+  </div>
+</div>
+
+<div class="page-container user-page">
+
+  <aside>
+    <h1>{{model.user.username}}</h1>
+    <p class="description">{{model.user.description}}</p>
+    <p class="joined">Joined {{moment-from-now model.user.joined allowEmpty=true}}</p>
+  </aside>
+
+  <main>
+  	{{liquid-outlet}}
+  </main>
+
+</div>

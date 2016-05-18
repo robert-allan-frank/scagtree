@@ -1,0 +1,26 @@
+.meow-list {
+  background-color:rgba(255, 255, 255, 0.8);
+  margin: 2px;
+
+  .no-meows {
+    text-align: center;
+    padding: 20px;
+
+    .icon {
+      background-image: url("/images/no-meows.png");
+      background-size: contain;
+      width: 35px;
+      height: 33px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 19px;
+      color: #B7B9B8;
+      line-height: 26px;
+      display: inline-block;
+    }
+  }
+}

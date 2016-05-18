@@ -6,6 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('profile', { path: 'profile/:userid' }, function() {
+    this.route('cats');
+  });
 });
 
 export default Router;

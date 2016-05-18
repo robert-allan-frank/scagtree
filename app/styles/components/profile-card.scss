@@ -1,0 +1,59 @@
+.profile-card {
+  height: 178px;
+  position: relative;
+
+  .cover-photo {
+    height: 80px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: gray;
+  }
+
+  .avatar {
+    width: 71px;
+    height: 71px;
+    position: relative;
+    margin-top: 42px;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+
+  a {
+    font-size: 18px;
+    color: #737373;
+    line-height: 25px;
+    font-weight: 500;
+    position: absolute;
+    top: 83px;
+    left: 100px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul.profile-stats {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      h4 {
+        font-size: 11px;
+        color: #B5B5B5;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+
+      p {
+        font-size: 19px;
+        color: #6D6D6D;
+        text-align: left;
+      }
+    }
+  }
+}

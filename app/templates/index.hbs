@@ -1,0 +1,20 @@
+<div class="page-container index">
+
+  <div class="text-wrapper">
+    <h1>Welcome to Scagtree.</h1>
+    <p class="tagline">Built with Ember.js to tell everyone about your cats</p>
+  </div>
+
+  <div class="login-box">
+    {{#liquid-if errorMessage}}
+    	<p class="error">{{errorMessage}}</p>
+    {{/liquid-if}}
+
+    {{input placeholder="Username" value=username }}
+    {{input type="password" placeholder="Password" value=password }}
+
+    <button class="signup">Sign up</button>
+    <button class="login" {{action 'onLogin'}}>Log in</button>
+  </div>
+
+</div>

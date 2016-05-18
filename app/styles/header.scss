@@ -1,0 +1,83 @@
+$header-height: 50px;
+
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: $header-height;
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.12);
+  z-index: 100;
+
+  .logo {
+    width: 113px;
+    height: 39px;
+    background-image: url("/images/scagtree.png");
+    margin-top: 6px;
+    margin-left: 36px;
+    float: left;
+    padding: 10px 0 0 46px;
+    color: #737373;
+    font-weight: 500;
+  }
+
+  nav {
+    float: right;
+    margin-right: 20px;
+
+    a {
+      height: $header-height;
+      display: inline-block;
+      line-height: $header-height + 5px;
+      padding: 0 20px;
+      font-size: 15px;
+      color: #007934;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      &::after {
+        content: '';
+        height: 5px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        background-color: #4E4E4E;
+        transition: bottom 0.2s;
+      }
+      &:hover::after, &.active::after {
+        bottom: 0;
+      }
+      &.home {
+        padding-left: 48px;
+        background-repeat: no-repeat;
+        background-position: 15px 14px;
+      }
+      .avatar {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        top: 8px;
+        left: -3px;
+      }
+    }
+  }
+}
+
+button.meow {
+  background-color: #666;
+  border: 1px solid #4E4E4E;
+  border-radius: 3px;
+  color: white;
+  padding: 7px 20px;
+  font-size: 15px;
+  outline: none !important;
+  float: right;
+  margin-top: 11px;
+  margin-left: 15px;
+  &:hover {
+    background-color: #A9ABAC;
+    color: white;
+  }
+}

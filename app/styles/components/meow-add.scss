@@ -1,0 +1,48 @@
+.meow-add {
+  padding: 10px 0 15px 16px;
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    vertical-align: top;
+  }
+
+  .bubble {
+    display: inline-block;
+    padding: 16px;
+    font-size: 15px;
+    color: #9E9E9E;
+    margin-top: -4px;
+    outline: none !important;
+    width: calc(100% - 55px);
+    margin-left: 8px;
+    text-align: left;
+    position: relative;
+    &:hover {
+      background-color: white;
+    }
+
+    &::after, &::before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &::after {
+      border-right-color: white;
+      border-width: 5px;
+      margin-top: -5px;
+    }
+    &::before {
+      border-right-color: rgba(0, 0, 0, 0.11);
+      border-width: 6px;
+      margin-top: -6px;
+    }
+  }
+}

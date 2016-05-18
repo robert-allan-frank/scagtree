@@ -1,0 +1,12 @@
+<img class="picture" src={{avatarUrl}}/>
+<div class="info">
+  <span>
+    <span>
+      {{#link-to 'profile' meow.user.id}}
+        {{meow.user.username}}
+      {{/link-to}}
+    </span>
+    <span>{{moment-from-now meow.created allowEmpty=true}}</span>
+    <span>{{meow.text}}</span>
+  </span>
+</div>
