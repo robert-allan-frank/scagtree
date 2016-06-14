@@ -8,7 +8,7 @@ export default Ember.Route.extend(SessionMixin, {
 
     if (!isAuthenticated) {
       if (transition.targetName.indexOf('index') === -1) {
-        this.transitionTo('index');
+        // this.transitionTo('index');
       }
     }
 

@@ -1,0 +1,150 @@
+.statistics-graph {
+  position: relative;
+  width: 872px;
+  min-height: 200px;
+
+  .loading {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    font-size: smaller;
+    color: #8B8B8B;
+
+    img {
+      width: 30%;
+      height: 30%;
+      margin: 20px 0 0 0;
+    }
+  }
+
+  .data {
+    display: none;
+  }
+
+  .charts {
+    padding: 10px 0;
+  }
+
+  .chart {
+    display: inline-block;
+    height: 151px;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: smaller;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  .dates-chart {
+    width: 856px;
+  }
+
+  .hours-chart {
+    width: 280px;
+  }
+
+  .characters-chart {
+    margin: 0 48px;
+    text-align: center;
+    width: 236px;
+  }
+
+  .hashtags-chart {
+    text-align: right;
+    width: 236px;
+  }
+
+  .reset {
+    padding-left: 1em;
+    font-size: smaller;
+    color: #8B8B8B;
+  }
+
+  .background.bar {
+    fill: #ccc;
+  }
+
+  .foreground.bar {
+    fill: #61C250;
+  }
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+  }
+
+  .axis text {
+    font: 10px sans-serif;
+  }
+
+  .brush rect.extent {
+    fill: #000;
+    fill-opacity: 0.3;
+  }
+
+  .brush .resize path {
+    fill: #eee;
+    stroke: #666;
+  }
+
+  .meow-grid {
+    border-top: 1px dashed #bbb;
+    color: #6B6B6B;
+    font-size: 14px;
+    min-height: 1024px;
+
+    .day {
+      font-weight: bold;
+      padding-top: 24px;
+    }
+
+    .date,
+    .day {
+       margin-bottom: 6px;
+     }
+
+     .time {
+      padding-left: 12px;
+     }
+
+    .meow {
+      line-height: 1.5em;
+      background: #eee;
+      width: 856px;
+      padding: 4px 0;
+      margin-bottom: 5px;
+    }
+
+    .meow div {
+      display: inline-block;
+      vertical-align: top;
+      width: 100px;
+    }
+
+    div.hashtags,
+    div.characters {
+      width: 60px;
+      padding-right: 10px;
+      text-align: right;
+    }
+
+    div.summary {
+      padding-left: 30px;
+      width: 600px;
+      color: #4E4E4E;
+    }
+  }
+
+  aside.totals {
+    position: absolute;
+    right: 12px;
+    font-size: smaller;
+    text-align: right;
+    width: 500px;
+  }
+
+}

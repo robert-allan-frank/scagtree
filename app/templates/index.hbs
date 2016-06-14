@@ -6,9 +6,7 @@
   </div>
 
   <div class="login-box">
-    {{#liquid-if errorMessage}}
-    	<p class="error">{{errorMessage}}</p>
-    {{/liquid-if}}
+    {{#liquid-if errorMessage}}<p class="error">{{errorMessage}}</p>{{/liquid-if}}
 
     {{input placeholder="Username" value=username }}
     {{input type="password" placeholder="Password" value=password }}

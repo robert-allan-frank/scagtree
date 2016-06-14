@@ -2,7 +2,7 @@
 
 <div class="stats-container">
   <div class="page-container">
-    <img class="avatar" src={{avatarUrl}} data-profile-image="me"/>
+    <img class="avatar" src={{avatarUrl}} data-profile-image="me">
 
     <ul class="profile-stats">
       {{#link-to "profile.index" tagName="li" id="link-meows"}}
@@ -25,6 +25,11 @@
         <p>{{model.user.followers.length}}</p>
       </li>
 
+      {{#link-to "profile.statistics" tagName="li" id="link-statistics"}}
+        <h4>Statistics</h4>
+        <p>94,079</p>
+      {{/link-to}}
+
       <div class="follow-container">
         {{#if isFollowing}}
           <button {{action 'unfollow'}} class="red">Unfollow</button>
@@ -45,8 +50,6 @@
     <p class="joined">Joined {{moment-from-now model.user.joined allowEmpty=true}}</p>
   </aside>
 
-  <main>
-  	{{liquid-outlet}}
-  </main>
+  <main>{{outlet}}</main>
 
 </div>

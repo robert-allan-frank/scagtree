@@ -1,4 +1,7 @@
 export default function() {
+
+  this.passthrough('*.csv');
+
   this.namespace = 'api';
 
   this.get('/cats/:id');

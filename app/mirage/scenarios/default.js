@@ -36,14 +36,14 @@ export default function(server, random = true) {
   let meowCount = random ? numberRandom(9, 12) : 9;
   for (let i = 0; i < meowCount; i++) {
     meows.push(server.create('meow', {
-      user: i >= 3 && random ? numberRandom(1, 3) : userIdFromIndex(i),
+      user: i >= 3 && random ? numberRandom(1, 3) : userIdFromIndex(i)
     }));
   }
 
   let catCount = random ? numberRandom(15, 20) : 15;
   for (let i = 0; i < catCount; i++) {
     cats.push(server.create('cat', {
-      user: i >= 3 && random ? numberRandom(1, 3) : userIdFromIndex(i),
+      user: i >= 3 && random ? numberRandom(1, 3) : userIdFromIndex(i)
     }));
   }
 

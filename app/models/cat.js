@@ -7,5 +7,5 @@ export default DS.Model.extend({
   lives: DS.attr('number'),
   dead: DS.attr('boolean'),
   picture: DS.attr('string'),
-  user: DS.belongsTo('user', {async: true}),
+  user: DS.belongsTo('user', {async: true})
 });

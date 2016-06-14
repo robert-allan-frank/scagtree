@@ -1,4 +1,4 @@
-<img class="picture {{if cat.dead 'dead'}}" src={{pictureUrl}}/>
+<img class="picture {{if cat.dead 'dead'}}" src={{pictureUrl}}>
 <div class="info">
   <span class={{if cat.dead 'dead'}}>
     <span>{{cat.name}}</span>
@@ -10,11 +10,11 @@
   {{#if (gt cat.lives 0)}}
     {{#if cat.dead}}
       <button class="revive" {{action (action this.attrs.onRevive cat)}}>
-        <img src="/images/revive-icon.jpg"/>
+        <img src="/images/revive-icon.jpg">
       </button>
     {{else}}
       <button class="trash" {{action (action this.attrs.onTrash cat)}}>
-        <img src="/images/trash-icon.png"/>
+        <img src="/images/trash-icon.png">
       </button>
     {{/if}}
   {{/if}}
